@@ -161,6 +161,8 @@ extern long double strtold (const char *__nptr, char **__endptr);
 #  define TCC_TARGET_ARM64
 # elif defined __riscv
 #  define TCC_TARGET_RISCV64
+# elif defined __wasm32__
+#  define TCC_TARGET_WASM32
 # else
 #  define TCC_TARGET_I386
 # endif

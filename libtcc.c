@@ -53,6 +53,10 @@
 #include "riscv64-gen.c"
 #include "riscv64-link.c"
 #include "riscv64-asm.c"
+#elif defined(TCC_TARGET_WASM32)
+#include "wasm32-gen.c"
+#include "wasm32-link.c"
+#include "wasm32-asm.c"
 #else
 #error unknown target
 #endif
